@@ -1,0 +1,147 @@
+22/06/03 16:30:48 WARN Utils: Your hostname, ubuntu resolves to a loopback address: 127.0.1.1; using 192.168.121.130 instead (on interface ens33)
+22/06/03 16:30:48 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/jcesco/spark/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/06/03 16:30:51 INFO SparkContext: Running Spark version 3.2.1
+22/06/03 16:30:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/06/03 16:30:51 INFO ResourceUtils: ==============================================================
+22/06/03 16:30:51 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/06/03 16:30:51 INFO ResourceUtils: ==============================================================
+22/06/03 16:30:51 INFO SparkContext: Submitted application: job-1-spark
+22/06/03 16:30:51 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/06/03 16:30:51 INFO ResourceProfile: Limiting resource is cpu
+22/06/03 16:30:51 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/06/03 16:30:51 INFO SecurityManager: Changing view acls to: jcesco
+22/06/03 16:30:51 INFO SecurityManager: Changing modify acls to: jcesco
+22/06/03 16:30:51 INFO SecurityManager: Changing view acls groups to: 
+22/06/03 16:30:51 INFO SecurityManager: Changing modify acls groups to: 
+22/06/03 16:30:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jcesco); groups with view permissions: Set(); users  with modify permissions: Set(jcesco); groups with modify permissions: Set()
+22/06/03 16:30:51 INFO Utils: Successfully started service 'sparkDriver' on port 37613.
+22/06/03 16:30:51 INFO SparkEnv: Registering MapOutputTracker
+22/06/03 16:30:51 INFO SparkEnv: Registering BlockManagerMaster
+22/06/03 16:30:51 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/06/03 16:30:51 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/06/03 16:30:51 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/06/03 16:30:52 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-21cc2e19-9bd1-44ea-bb30-0f5fe55d1879
+22/06/03 16:30:52 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/06/03 16:30:52 INFO SparkEnv: Registering OutputCommitCoordinator
+22/06/03 16:30:52 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/06/03 16:30:52 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.121.130:4040
+22/06/03 16:30:52 INFO Executor: Starting executor ID driver on host 192.168.121.130
+22/06/03 16:30:52 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45235.
+22/06/03 16:30:52 INFO NettyBlockTransferService: Server created on 192.168.121.130:45235
+22/06/03 16:30:52 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/06/03 16:30:52 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.121.130, 45235, None)
+22/06/03 16:30:52 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.121.130:45235 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.121.130, 45235, None)
+22/06/03 16:30:52 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.121.130, 45235, None)
+22/06/03 16:30:52 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.121.130, 45235, None)
+22/06/03 16:30:53 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+22/06/03 16:30:53 INFO SharedState: Warehouse path is 'file:/mnt/hgfs/edz/src/spark-warehouse'.
+
+Imprime os dados lidos da lading:
++--------+--------+--------+-----+------+--------+--------+
+|practice|bnf_code|bnf_name|items|   nic|act_cost|quantity|
++--------+--------+--------+-----+------+--------+--------+
+|    5668|    8092|     592|    2|  44.1|   40.84|     189|
+|    1596|   17512|   16983|    2|  1.64|    1.64|      35|
+|    1596|   25587|   16124|    1|  1.26|    1.28|      42|
+|    1596|   12551|    1282|    2|  0.86|    1.02|      42|
+|    1596|   18938|   10575|    1|  1.85|    1.82|      56|
+|    1596|    8777|   21507|    1|  3.31|    3.18|      56|
+|    1596|    9369|   12008|    1| 63.15|   58.56|      56|
+|    1596|   27926|   17643|    2|158.66|  147.07|      56|
+|    1596|   26148|   10230|    1|  0.35|    0.44|      14|
+|    1596|    9148|    3381|    1|  0.26|    0.35|       7|
+|    1596|   19500|   18008|    1|  0.85|     0.9|      14|
+|    1596|    5312|    2870|    1|  0.56|    0.63|      14|
+|    1596|    5008|   15013|    1|  0.19|    0.29|       7|
+|    1596|    2885|    1851|    2|  1.99|    2.06|      59|
+|    1596|    5737|   10645|    4|  4.59|     4.6|      91|
+|    1596|   14030|   17315|    1|  1.16|    1.19|      21|
+|    1596|   22190|   12644|    2|  2.26|    2.32|      49|
+|    1596|   25059|   20447|    1|  1.23|    1.25|      28|
+|    1596|   24523|    7372|    2|  1.68|    1.68|      35|
+|    1596|   22227|    5860|    4|  2.69|    2.84|      57|
++--------+--------+--------+-----+------+--------+--------+
+only showing top 20 rows
+
+None
+
+Imprime o schema do dataframe lido da raw:
+root
+ |-- practice: integer (nullable = true)
+ |-- bnf_code: integer (nullable = true)
+ |-- bnf_name: integer (nullable = true)
+ |-- items: integer (nullable = true)
+ |-- nic: double (nullable = true)
+ |-- act_cost: double (nullable = true)
+ |-- quantity: integer (nullable = true)
+
+None
+
+Escrevendo os dados lidos da raw para parquet na processing zone...
+
+Imprime os dados lidos em parquet da processing zone
++--------+--------+--------+-----+------+--------+--------+
+|practice|bnf_code|bnf_name|items|   nic|act_cost|quantity|
++--------+--------+--------+-----+------+--------+--------+
+|    3626|   12090|   20521|    3|   8.4|    7.82|     168|
+|    3626|   23511|   11576|    1| 32.18|   29.81|      28|
+|    3626|   14802|   14672|  162|141.13|  133.93|    4760|
+|    3626|   14590|   10011|   17| 15.01|   14.12|     532|
+|    3626|   24483|   13726|   69| 57.57|   54.67|    2121|
+|    3626|    7768|   22070|  155|113.03|  109.41|    4144|
+|    3626|    1877|   13598|  102|  68.5|    67.4|    2370|
+|    3626|   18110|    3990|  189|156.66|  150.44|    5222|
+|    3626|   14058|    2144|   23| 23.52|   22.48|     588|
+|    3626|    4558|    5695|   32|116.64|  109.21|     756|
+|    3626|    2851|     471|   97| 73.44|   71.92|    2387|
+|    3626|   20025|   21500|    2|   9.4|    8.74|     112|
+|    3626|   19371|   19847|    1|   5.9|    5.48|      28|
+|    3626|   21630|      92|    1|  11.8|   10.94|      56|
+|    3626|    3704|   15798|    5| 23.33|   21.77|     230|
+|    3626|   18689|    9098|    2|  22.2|   20.69|     140|
+|    3626|     865|   17051|   15|  27.5|   26.27|     616|
+|    3626|   22188|    9551|    2|  5.48|     5.1|     112|
+|    3626|    2237|    2697|   29| 158.4|  147.05|     896|
+|    3626|   18335|   22620|    8| 29.28|   27.61|     168|
++--------+--------+--------+-----+------+--------+--------+
+only showing top 20 rows
+
+None
+
+ ========= Imprime o resultado do dataframe processado =========
+
++--------+------------------+-------------+----------+------------------+
+|Bnf_code|     Soma_Act_cost|Soma_Quantity|Soma_items|    Media_Act_cost|
++--------+------------------+-------------+----------+------------------+
+|   18498| 8207199.779999969|       106187|    106027|248.08656610845682|
+|   10206|219693.79999999958|     12782800|     16820| 18.40289830792424|
+|    9376| 1087589.389999999|      4318883|     92483|  27.2544641022428|
+|    8389| 2698243.509999993|     23799280|   1821517| 27.94890835076954|
+|    7253|2863514.2799999868|     35613466|    691374|34.203467271858415|
+|   16861|256968.39000000124|      5203705|    109860| 8.069854913167768|
+|   11141| 293024.8499999999|       236990|      2786|129.71440903054446|
+|   24347| 75200.45999999998|       231374|      5807|18.133701470942846|
+|    5803| 80253.61999999998|        18915|      1384| 82.31140512820511|
+|    7982|         137102.66|         8936|      4039|41.445785973397825|
+|   23271|         163712.78|       609672|     18135| 16.29144989551199|
+|    7833| 55761.62999999994|       481630|      7008|10.405230453442796|
+|   18024| 725374.7600000001|       241904|      5643|169.28232438739792|
+|   13832|110223.15999999992|       650993|     16852|47.326389008157975|
+|   23364|1322245.0600000008|       757596|     12259|143.23963384248736|
+|    4935|16735.600000000002|      1310500|       806| 23.97650429799427|
+|     463|  658200.050000008|      3735138|     65747|21.331347225823436|
+|   21700|64436.880000000005|        32947|       344| 200.1145341614907|
+|   27484| 28121.93000000002|       243924|      4278| 7.995999431333528|
+|    4818|11052.550000000001|       917500|       950|13.049055489964582|
++--------+------------------+-------------+----------+------------------+
+only showing top 20 rows
+
+None
+
+Escrevendo os dados processados na Curated Zone...
