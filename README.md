@@ -1,1 +1,1 @@
-# First stpes with Apache Spark
+# First steps with Apache Spark
